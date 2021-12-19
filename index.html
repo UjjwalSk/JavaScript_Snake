@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/games');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Games', sans-serif;
+            color: white;
+            text-shadow: 2px 2px 10px #000;
+            letter-spacing: 0.1em;
+            transition: all 0.5s;
+        }
+
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: #141212;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"
+        integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <h1>SNAKE GAME</h1>
+    <h3>High Score: <span id='high'>0</span></h3>
+    <h3>Current Score: <span id='curr'>0</span></h3>
+    <p><label for="walls">WALLS? </label><input type="checkbox" name="JUST" id="walls"></p>
+</body>
+<script src="snake.js"></script>
+<script src="script.js"></script>
+
+</html>
